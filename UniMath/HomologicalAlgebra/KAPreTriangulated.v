@@ -42,7 +42,7 @@ Require Import UniMath.CategoryTheory.equivalences.
 
 Require Import UniMath.CategoryTheory.Abelian.
 Require Import UniMath.CategoryTheory.ShortExactSequences.
-Require Import UniMath.CategoryTheory.category_abgr.
+Require Import UniMath.CategoryTheory.categories.abgrs.
 
 Require Import UniMath.CategoryTheory.precategoriesWithBinOps.
 Require Import UniMath.CategoryTheory.PrecategoriesWithAbgrops.
@@ -104,7 +104,7 @@ Section KAPreTriangulated.
 
   Context {A : Additive}.
 
-  Local Opaque ComplexHomotFunctor ComplexHomotSubset QuotPrecategory identity
+  Local Opaque ComplexHomotFunctor ComplexHomotSubset Quotcategory identity
         MappingConePr1 MappingConeIn2 RotMorphism RotMorphismInv InvRotMorphism InvRotMorphismInv
         to_inv compose pathsinv0 pathscomp0 ishinh to_abgrop.
 

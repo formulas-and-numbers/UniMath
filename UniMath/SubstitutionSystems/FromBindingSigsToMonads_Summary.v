@@ -62,7 +62,7 @@ Definition Signature : ∏ C : precategory, has_homsets C → ∏ D : precategor
 
 (** Definition 5: Morphism of signatures with strength *)
 Definition SignatureMor :
-  ∏ C D : Precategory,
+  ∏ C D : category,
        Signatures.Signature C (homset_property C) D (homset_property D)
        → Signatures.Signature C (homset_property C) D (homset_property D) → UU :=
   @UniMath.SubstitutionSystems.SignatureCategory.SignatureMor.
@@ -117,7 +117,7 @@ Definition Colims : precategory → UU :=
   @UniMath.CategoryTheory.limits.graphs.colimits.Colims.
 
 (** Remark 20: Uniqueness of colimits *)
-Lemma isaprop_Colims : ∏ C : category, isaprop (Colims C).
+Lemma isaprop_Colims : ∏ C : univalent_category, isaprop (Colims C).
 Proof.
 exact @UniMath.CategoryTheory.limits.graphs.colimits.isaprop_Colims.
 Defined.

@@ -20,7 +20,7 @@ Require UniMath.Ktheory.Precategories.
 
 Section interface.
 
-Variable C : Precategory.
+Variable C : category.
 
 Set Automatic Introduction.
 
@@ -156,7 +156,7 @@ Qed.
 
 Section coproduct_unique.
 
-Hypothesis H : is_category C.
+Hypothesis H : is_univalent C.
 
 Variables a b : C.
 
@@ -186,7 +186,7 @@ End interface.
 
 Section def_functor_pointwise_coprod.
 
-Variable C D : Precategory.
+Variable C D : category.
 Variable HD : Coproducts D.
 
 Definition hsD := homset_property D.
@@ -195,7 +195,7 @@ Section coproduct_functor.
 
 Variables F G : functor C D.
 
-Definition Coproducts_functor_precat : Coproducts (functor_Precategory C D).
+Definition Coproducts_functor_precat : Coproducts (functor_category C D).
 Proof.
   apply functorBinarySum.
   exact HD.
