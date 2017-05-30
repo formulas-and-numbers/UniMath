@@ -16,7 +16,7 @@ Contents:
 - Exponentials ([has_exponentials_PreShv])
 - Constant presheaf ([constant_PreShv])
 - Definition of the subobject classifier (without proof) ([Ω_PreShv], [Ω_mor])
-- Proof that Ω_PreShv is a bounded lattice object ([Ω_PreShv_lattice],
+- Proof that [Ω_PreShv] is a bounded lattice object ([Ω_PreShv_lattice],
   [Ω_PreShv_bounded_lattice])
 
 Written by: Anders Mörtberg, 2017
@@ -30,7 +30,7 @@ Require Import UniMath.Foundations.Sets.
 Require Import UniMath.Algebra.Lattice.
 
 Require Import UniMath.CategoryTheory.total2_paths.
-Require Import UniMath.CategoryTheory.precategories.
+Require Import UniMath.CategoryTheory.Categories.
 Require Import UniMath.CategoryTheory.functor_categories.
 Require Import UniMath.CategoryTheory.category_hset.
 Require Import UniMath.CategoryTheory.category_hset_structures.

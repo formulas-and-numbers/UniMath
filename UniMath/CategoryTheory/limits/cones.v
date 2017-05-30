@@ -10,7 +10,7 @@ Require Import UniMath.Foundations.Propositions.
 Require Import UniMath.Foundations.Sets.
 
 Require Import UniMath.CategoryTheory.total2_paths.
-Require Import UniMath.CategoryTheory.precategories.
+Require Import UniMath.CategoryTheory.Categories.
 Require Import UniMath.CategoryTheory.functor_categories.
 Local Open Scope cat.
 
@@ -331,5 +331,5 @@ End CONE_category.
 
 End Cone.
 
-Implicit Arguments CONE [J C].
-Implicit Arguments ConeConnect [J C].
+Arguments CONE [J C].
+Arguments ConeConnect [J C].
